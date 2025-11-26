@@ -5,6 +5,7 @@ author: Harttle
 language:
   - en
   - zh-cn
+  - vi
 timezone: UTC
 
 url: https://liquidjs.com
@@ -19,9 +20,12 @@ pretty_urls:
   trailing_html: false
 
 theme: navy
-skip_render: "api/**"
-ignore: "api/**"
-include: "api/**"
+skip_render:
+  - "api/**"
+ignore:
+  - "api/**"
+include:
+  - "api/**"
 syntax_highlighter: prismjs
 prismjs:
   preprocess: true

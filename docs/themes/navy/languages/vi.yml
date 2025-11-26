@@ -1,0 +1,67 @@
+menu:
+  tutorials: Hướng dẫn
+  tags: Thẻ
+  filters: Bộ lọc
+  playground: Bảng thử
+  api: API
+  search: Tìm kiếm
+
+index:
+  get_started: Bắt đầu
+  contributors:
+    title: Người đóng góp
+    description: 'LiquidJS tuân theo đặc tả <a href="https://github.com/all-contributors/all-contributors">all-contributors</a>, xem <a href="tutorials/contribution-guidelines.html">hướng dẫn ở đây</a>! Xin cảm ơn những người tuyệt vời này:'
+  sponsors:
+    title: Nhà tài trợ
+    description: 'Nếu bạn yêu thích LiquidJS hoặc nó đang mang lại lợi ích cho doanh nghiệp của bạn, xin hãy <a href="https://github.com/sponsors/harttle">tài trợ cho chúng tôi</a>!'
+
+playground:
+  title: Bảng thử
+  loading: Đang tải...
+
+page:
+  contents: Mục lục
+  back_to_top: Lên đầu trang
+  improve: Cải thiện tài liệu này
+  report: Báo cáo vấn đề
+  prev: Trước
+  next: Tiếp
+  last_updated: "Cập nhật lần cuối: %s"
+
+sidebar:
+  tutorials:
+    getting_started: Bắt đầu
+    intro: Giới thiệu về Liquid
+    setup: Cài đặt
+    options: Tùy chọn
+    render_file: Kết xuất tệp
+    partials: Bao gồm và Bố cục
+    express: Sử dụng trong Express.js
+
+    advanced: Nâng cao
+    caching: Bộ nhớ đệm
+    escaping: Thoát ký tự
+    registration: Đăng ký Filters/Tags
+    access_scope_in_filters: Truy cập phạm vi trong filter
+    parse_parameters: Phân tích tham số
+    render_tag_content: Kết xuất nội dung thẻ
+    drops: Liquid Drops
+    sync_and_async: Đồng bộ và Bất đồng bộ
+    whitespace: Kiểm soát khoảng trắng
+    plugins: Plugin
+    operators: Các toán tử
+    truth: Truthy và Falsy
+    dos: DoS
+    static_analysis: Phân tích tĩnh
+
+    miscellaneous: Khác
+    migration9: 'Chuyển sang LiquidJS 9'
+    contribution_guidelines: 'Hướng dẫn đóng góp'
+    changelog: 'Nhật ký thay đổi'
+    differences: 'Khác biệt với Shopify/liquid'
+  filters:
+    overview: Tổng quan
+  tags:
+    overview: Tổng quan
+footer:
+  license: 'Tài liệu được cấp phép theo <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.'

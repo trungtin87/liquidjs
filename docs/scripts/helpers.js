@@ -181,7 +181,15 @@ hexo.extend.helper.register('header_menu', function (className) {
     if (!isEnglish && isLocalized) langPath = '/' + lang + path
 
     // Tạo URL đầy đủ (bao gồm config.root nếu có)
-    const url = this.url_for(langPath)
+    // Force using config.root to avoid issues with relative_link or url_for
+    let url = this.url_for(langPath)
+    if (langPath.startsWith('/')) {
+      const root = this.config.root
+      // Remove leading slash from langPath to avoid double slash if root ends with /
+      // root is /liquidjs/, langPath is /tutorials/...
+      // result: /liquidjs/tutorials/...
+      url = root + langPath.substring(1)
+    }
 
     // Kiểm tra xem có phải menu item đang active không
     const active = ('/' + this.page.canonical_path).slice(0, path.length) === path ? ' active' : ''

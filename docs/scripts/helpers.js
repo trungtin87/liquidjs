@@ -7,7 +7,7 @@ const { readFileSync } = require('fs')
 const cheerio = require('cheerio')
 const fullUrlFor = hexo.extend.helper.get('full_url_for').bind(hexo)
 
-const localizedPath = ['tutorials', 'filters', 'tags', 'playground']
+const localizedPath = ['/liquidjs/tutorials', '/liquidjs/filters', '/liquidjs/tags', '/liquidjs/playground']
 
 hexo.extend.helper.register('page_nav', function () {
   const type = this.page.canonical_path.split('/')[0]

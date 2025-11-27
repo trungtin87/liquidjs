@@ -10,6 +10,9 @@ timezone: UTC
 
 url: https://trungtin87.github.io/liquidjs
 root: /liquidjs/
+# Đường dẫn gốc (Base path) cho trang web
+baseurl: "/liquidjs"
+
 permalink: news/:year/:month/:day/:title/
 relative_link: true
 new_post_name: :year-:month-:day-:title.md # File name of new posts

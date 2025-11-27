@@ -15,6 +15,10 @@
         <h2>Output</h2>
         <div class="editor" id="previewEl">{{__('playground.loading')}}</div>
       </div>
+      <div class="area-render editor-wrapper">
+        <h2>Render</h2>
+        <div class="editor" id="renderEl">{{__('playground.loading')}}</div>
+      </div>
     </div>
     <p class="inner version"></p>
   </div>

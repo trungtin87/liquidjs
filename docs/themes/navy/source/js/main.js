@@ -211,9 +211,11 @@
       // Parse và render template với data
       const html = await engine.parseAndRender(tpl, JSON.parse(data));
       preview.setValue(html, 1);  // Hiển thị kết quả
+      document.getElementById('renderEl').innerHTML = html; // Hiển thị render thực tế
     } catch (err) {
       // Nếu có lỗi, hiển thị stack trace
       preview.setValue(err.stack, 1);
+      document.getElementById('renderEl').innerHTML = err.message;
       throw err;
     }
   }

@@ -8,8 +8,8 @@ language:
   - vi
 timezone: UTC
 
-url: https://liquidjs.com
-root: /
+url: https://trungtin87.github.io/liquidjs
+root: /liquidjs/
 permalink: news/:year/:month/:day/:title/
 relative_link: true
 new_post_name: :year-:month-:day-:title.md # File name of new posts

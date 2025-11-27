@@ -1,4 +1,5 @@
 # liquidjs
+
 [![npm version](https://img.shields.io/npm/v/liquidjs.svg?logo=npm&style=flat-square)](https://www.npmjs.org/package/liquidjs)
 [![npm downloads](https://img.shields.io/npm/dm/liquidjs.svg?style=flat-square)](https://www.npmjs.org/package/liquidjs)
 [![Coverage](https://img.shields.io/coveralls/harttle/liquidjs.svg?style=flat-square)](https://coveralls.io/github/harttle/liquidjs?branch=master)
@@ -6,70 +7,69 @@
 [![DUB license](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)](https://github.com/harttle/liquidjs/blob/master/LICENSE)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/harttle/liquidjs)
 
-A simple, expressive and safe [Shopify][shopify/liquid] / GitHub Pages compatible template engine in pure JavaScript.
-**The purpose of this repo** is to provide a standard Liquid implementation for the JavaScript community so that [Jekyll sites](https://jekyllrb.com), [GitHub Pages](https://pages.github.com/) and [Shopify templates](https://themes.shopify.com/) can be ported to Node.js without pain.
+Một công cụ template engine đơn giản, biểu cảm và an toàn, tương thích với [Shopify][shopify/liquid] / GitHub Pages, được viết hoàn toàn bằng JavaScript.
+**Mục đích của repo này** là cung cấp một triển khai Liquid chuẩn cho cộng đồng JavaScript để các trang [Jekyll](https://jekyllrb.com), [GitHub Pages](https://pages.github.com/) và [Shopify templates](https://themes.shopify.com/) có thể được chuyển sang Node.js một cách dễ dàng.
 
-* [Documentation][doc]
-* Please star [LiquidJS on GitHub][github]!
-* Financial support via [GitHub Sponsors](https://github.com/sponsors/harttle).
+* [Tài liệu][doc]
+* Hãy star [LiquidJS trên GitHub][github]!
+* Hỗ trợ tài chính qua [GitHub Sponsors](https://github.com/sponsors/harttle).
 
 <p align="center"><a href="https://liquidjs.com"><img height="155px" width="155px" src="https://liquidjs.com/icon/mstile-310x310.png" alt="logo"></a></p>
 
-## What's it like?
+## Nó trông như thế nào?
 
-Basically there're two types of Liquid syntax: tags enclosed by `{% %}` and outputs enclosed by `{{ }}`. A Liquid template looks like:
+Về cơ bản có hai loại cú pháp Liquid: thẻ (tags) được bao bọc bởi `{% %}` và đầu ra (outputs) được bao bọc bởi `{{ }}`. Một template Liquid trông như sau:
 
 ```liquid
 {% if username %}
-  {{ username | append: ", welcome to LiquidJS!" | capitalize }}
+  {{ username | append: ", chào mừng đến với LiquidJS!" | capitalize }}
 {% endif %}
 ```
 
-[A live demo](https://liquidjs.com/playground.html) is also available and here's a [quick tutorial](https://liquidjs.com/tutorials/intro-to-liquid.html) for Liquid syntax.
+[Demo trực tiếp](https://liquidjs.com/playground.html) cũng có sẵn và đây là [hướng dẫn nhanh](https://liquidjs.com/tutorials/intro-to-liquid.html) về cú pháp Liquid.
 
+## Cài đặt
 
-## Installation
-
-Install from npm in Node.js:
+Cài đặt từ npm trong Node.js:
 
 ```bash
 npm install liquidjs
 ```
 
-Or use the UMD bundle from jsDelivr:
+Hoặc sử dụng gói UMD từ jsDelivr:
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/liquidjs/dist/liquid.browser.min.js"></script>
 ```
 
-Or render directly from CLI using npx:
+Hoặc render trực tiếp từ CLI bằng npx:
 
 ```bash
 npx liquidjs --template 'Hello, {{ name }}!' --context '{"name": "Snake"}'
 ```
 
-For more details, refer to the [Setup Guide][setup].
+Để biết thêm chi tiết, tham khảo [Hướng dẫn Cài đặt][setup].
 
-## Who's Using LiquidJS?
+## Ai đang sử dụng LiquidJS?
 
-- [Eleventy](https://www.11ty.dev/): Eleventy, a simpler static site generator.
-- [Github Docs](https://github.com/github/docs): The open-source repo for docs.github.com.
-- [Opensense](https://www.opensense.com/): The smarter way to send email.
-- [Directus](https://docs.directus.io/): an instant REST+GraphQL API and intuitive no-code data collaboration app for any SQL database.
-- [Semgrep](https://github.com/returntocorp/semgrep): Lightweight static analysis for many languages.
-- [Rock](https://www.rockrms.com/): An open source CMS, Relationship Management System (RMS) and Church Management System (ChMS) all rolled into one.
-- [Mitosis](https://github.com/BuilderIO/mitosis): Write components once, run everywhere. Compiles to React, Vue, Qwik, Solid, Angular, Svelte, and more.
-- [Pattern Lab](https://patternlab.io/): a frontend workshop environment that helps you build, view, test, and showcase your design system's UI components.
-- [Builder.io](https://www.builder.io/m/developers): the first and only headless CMS with a visual editor that lets you drag and drop with your components, directly within your current site or app. Completely API-driven, for cleaner code and simpler workflows.
-- [Microsoft Power Pages](https://learn.microsoft.com/en-us/power-pages/introduction): a secure, enterprise-grade, low-code software as a service (SaaS) platform for creating, hosting, and administering modern external-facing business websites.
-- [Azure API Management developer portal](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-developer-portal): an automatically generated, fully customizable website with the documentation of your APIs.
-- [WISMOlabs](https://wismolabs.com/): Post Purchase Experience platform for eCommerce retailers enhancing customer satisfaction by using LiquidJS to provide customizable post-purchase experiences through programmable email, SMS, order tracking pages, and webhooks.
+* [Eleventy](https://www.11ty.dev/): Eleventy, một trình tạo trang tĩnh đơn giản hơn.
+* [Github Docs](https://github.com/github/docs): Repo mã nguồn mở cho docs.github.com.
+* [Opensense](https://www.opensense.com/): Cách thông minh hơn để gửi email.
+* [Directus](https://docs.directus.io/): một REST+GraphQL API tức thì và ứng dụng cộng tác dữ liệu no-code trực quan cho bất kỳ cơ sở dữ liệu SQL nào.
+* [Semgrep](https://github.com/returntocorp/semgrep): Phân tích tĩnh nhẹ cho nhiều ngôn ngữ.
+* [Rock](https://www.rockrms.com/): Một CMS mã nguồn mở, Hệ thống Quản lý Quan hệ (RMS) và Hệ thống Quản lý Nhà thờ (ChMS) tất cả trong một.
+* [Mitosis](https://github.com/BuilderIO/mitosis): Viết component một lần, chạy mọi nơi. Biên dịch sang React, Vue, Qwik, Solid, Angular, Svelte và nhiều hơn nữa.
+* [Pattern Lab](https://patternlab.io/): một môi trường workshop frontend giúp bạn xây dựng, xem, kiểm tra và trưng bày các component UI của hệ thống thiết kế.
+* [Builder.io](https://www.builder.io/m/developers): CMS headless đầu tiên và duy nhất với trình chỉnh sửa trực quan cho phép bạn kéo và thả với các component của mình, trực tiếp trong trang web hoặc ứng dụng hiện tại. Hoàn toàn hướng API, cho code sạch hơn và quy trình làm việc đơn giản hơn.
+* [Microsoft Power Pages](https://learn.microsoft.com/en-us/power-pages/introduction): một nền tảng phần mềm dưới dạng dịch vụ (SaaS) low-code an toàn, cấp doanh nghiệp để tạo, lưu trữ và quản lý các trang web kinh doanh đối ngoại hiện đại.
+* [Azure API Management developer portal](https://learn.microsoft.com/en-us/azure/api-management/api-management-howto-developer-portal): một trang web được tạo tự động, có thể tùy chỉnh hoàn toàn với tài liệu về các API của bạn.
+* [WISMOlabs](https://wismolabs.com/): Nền tảng Trải nghiệm Sau Mua hàng cho các nhà bán lẻ thương mại điện tử nâng cao sự hài lòng của khách hàng bằng cách sử dụng LiquidJS để cung cấp trải nghiệm sau mua hàng có thể tùy chỉnh thông qua email, SMS, trang theo dõi đơn hàng và webhook có thể lập trình.
 
-Feel free to create a PR or contact me to add your use case into this list!
+Hãy thoải mái tạo PR hoặc liên hệ với tôi để thêm trường hợp sử dụng của bạn vào danh sách này!
 
-## Financial Support
+## Hỗ trợ Tài chính
 
-If you personally love LiquidJS or it's benefiting your business, please consider financially support us via [GitHub Sponsors](https://github.com/sponsors/harttle). Special thanks to our sponsors!
+Nếu bạn cá nhân yêu thích LiquidJS hoặc nó đang mang lại lợi ích cho doanh nghiệp của bạn, vui lòng xem xét hỗ trợ tài chính cho chúng tôi qua [GitHub Sponsors](https://github.com/sponsors/harttle). Cảm ơn đặc biệt đến các nhà tài trợ của chúng tôi!
 
 <!-- FINANCIAL-CONTRIBUTORS-BEGIN -->
 <p align="center" style="line-height: 2.5;">
@@ -98,9 +98,9 @@ If you personally love LiquidJS or it's benefiting your business, please conside
 </p>
 <!-- FINANCIAL-CONTRIBUTORS-END -->
 
-## Contributors ✨
+## Cộng tác viên ✨
 
-Want to contribute? see [Contribution Guidelines][contribution]. Thanks goes to these wonderful people:
+Muốn đóng góp? xem [Hướng dẫn Đóng góp][contribution]. Cảm ơn những người tuyệt vời này:
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -227,9 +227,7 @@ Want to contribute? see [Contribution Guidelines][contribution]. Thanks goes to 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 [shopify/liquid]: https://shopify.github.io/liquid/
-[plugins]: https://liquidjs.com/tutorials/plugins.html#Plugin-List
 [setup]: https://liquidjs.com/tutorials/setup.html
 [doc]: https://liquidjs.com
 [github]: https://github.com/harttle/liquidjs
-[oc]: https://opencollective.com/liquidjs/
 [contribution]: https://liquidjs.com/tutorials/contribution-guidelines.html

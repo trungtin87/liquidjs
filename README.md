@@ -26,7 +26,7 @@ Về cơ bản có hai loại cú pháp Liquid: thẻ (tags) được bao bọc 
 {% endif %}
 ```
 
-[Demo trực tiếp](https://liquidjs.com/playground.html) cũng có sẵn và đây là [hướng dẫn nhanh](https://liquidjs.com/tutorials/intro-to-liquid.html) về cú pháp Liquid.
+[Demo trực tiếp](https://trungtin87.github.io/liquidjs/vi/playground.html) cũng có sẵn và đây là [hướng dẫn nhanh](https://liquidjs.com/tutorials/intro-to-liquid.html) về cú pháp Liquid.
 
 ## Cài đặt
 

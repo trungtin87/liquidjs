@@ -9,9 +9,9 @@ language:
 timezone: UTC
 
 url: https://oevietnam.github.io/liquidjs/
-root: /liquidjs/
+root: /liquidjs-Vietnamese/
 # Đường dẫn gốc (Base path) cho trang web
-baseurl: "/liquidjs"
+baseurl: "/liquidjs-Vietnamese"
 
 permalink: news/:year/:month/:day/:title/
 relative_link: true

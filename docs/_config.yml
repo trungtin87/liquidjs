@@ -8,7 +8,7 @@ language:
   - zh-cn
 timezone: UTC
 
-url: https://trungtin87.github.io/liquidjs/
+url: https://oevietnam.github.io/liquidjs/
 root: /liquidjs/
 # Đường dẫn gốc (Base path) cho trang web
 baseurl: "/liquidjs"
